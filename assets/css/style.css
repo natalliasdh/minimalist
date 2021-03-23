@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    height: 30px;
+    background-color: aqua;
+    flex-shrink: 0;
+}
+
+
+/* ----------------------Navigation area start---------------------------------------------------------*/
+
+nav {
+    height: 30px;
+    flex-shrink: 0;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+    justify-content: space-between;
+    position: relative;
+}
+
+.triangles {
+    display: flex;
+    flex-direction: row;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 26px solid #33323D;
+    margin-bottom: 4px;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 26px solid #33323D;
+    margin-top: 4px;
+}
+
+#burger {
+    background-image: url("../images/hamburger.svg");
+    width: 24px;
+    height: 13px;
+    margin: auto 0;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+#myLinks {
+    display: none;
+    height: 186px;
+    width: 223px;
+    background-color: #33323D;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 56px;
+}
+
+#myLinks a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-bottom: 32px;
+}
