@@ -10,18 +10,16 @@ body {
 }
 
 body {
-    padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
 main {
     flex: 1 0 auto;
+    margin: 32px;
 }
 
 footer {
-    height: 30px;
-    background-color: aqua;
     flex-shrink: 0;
 }
 
@@ -29,6 +27,7 @@ footer {
 /* ----------------------Navigation area start---------------------------------------------------------*/
 
 nav {
+    margin: 32px;
     height: 30px;
     flex-shrink: 0;
     height: 32px;
@@ -83,11 +82,12 @@ nav {
     align-items: center;
     position: absolute;
     flex-direction: column;
-    right: 0;
+    right: 0px;
     top: 56px;
 }
 
-#myLinks a {
+#myLinks a,
+#footerLinks a {
     display: block;
     color: white;
     text-decoration: none;
@@ -95,4 +95,47 @@ nav {
     letter-spacing: 2px;
     font-size: 12px;
     padding-bottom: 32px;
+    font-weight: regular;
 }
+
+
+/* ----------------------Navigation area end---------------------------------------------------------*/
+
+
+/* ----------------------Footer area start---------------------------------------------------------*/
+
+footer {
+    background-color: #33323D;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 354px;
+    padding: 0;
+}
+
+footer .triangle-up {
+    border-bottom-color: #FFF;
+}
+
+footer .triangle-down {
+    border-top-color: #FFF;
+}
+
+#footerLinks {
+    display: flex;
+    height: 186px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
+    width: 24px;
+    padding: 0 8px;
+}
+
+
+/* ----------------------Footer area end---------------------------------------------------------*/
