@@ -8,6 +8,7 @@ body {
     height: 100%;
     font-family: 'Public Sans', sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -164,6 +165,10 @@ h1 {
     letter-spacing: -0.36px;
     line-height: 42px;
     color: #33323D;
+}
+
+a {
+    text-decoration: none;
 }
 
 .aboutme {
