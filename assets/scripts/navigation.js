@@ -8,11 +8,17 @@ function myFunction() {
         y.style.backgroundImage = "url('assets/images/hamburger.svg')";
         y.style.width = "24px";
         y.style.height = "13px";
+
     } else {
         x.style.display = "flex";
         y.style.backgroundImage = "url('assets/images/close.svg')";
         y.style.width = "18px";
         y.style.height = "19px";
         y.style.backgroundRepeat = "norepeat";
+
+
+
+
     }
+
 }

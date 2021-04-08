@@ -35,7 +35,6 @@
             height: 32px;
             display: flex;
             flex-direction: row;
-            border: 1px solid green;
             justify-content: space-between;
             position: relative;
         }
@@ -305,15 +304,19 @@
                 display: none;
             }
             #myLinks {
+                display: flex !important;
                 width: 60%;
                 height: unset;
-                display: flex;
                 background-color: white;
                 position: static;
                 flex-direction: row;
-                background-color: violet;
+                justify-content: flex-end;
             }
             #myLinks a {
-                color: black;
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 14px 0px 14px 16px;
+                color: #33323D;
             }
         }
