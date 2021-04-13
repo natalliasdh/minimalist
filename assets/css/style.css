@@ -1,336 +1,417 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        html,
-        body {
-            height: 100%;
-            font-family: 'Public Sans', sans-serif;
-            font-size: 16px;
-            scroll-behavior: smooth;
-            box-sizing: border-box;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        main {
-            flex: 1 0 auto;
-            margin: 32px;
-        }
-        
-        footer {
-            flex-shrink: 0;
-        }
-        /* ----------------------Navigation area start---------------------------------------------------------*/
-        
-        nav {
-            margin: 32px;
-            margin-bottom: 15px;
-            height: 30px;
-            flex-shrink: 0;
-            height: 32px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            position: relative;
-        }
-        
-        .triangles {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .triangle-up {
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 26px solid #33323D;
-            margin-bottom: 4px;
-        }
-        
-        .triangle-down {
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-top: 26px solid #33323D;
-            margin-top: 4px;
-        }
-        
-        #burger {
-            background-image: url("../images/hamburger.svg");
-            width: 24px;
-            height: 13px;
-            margin: auto 0;
-        }
-        
-        #burger:hover {
-            cursor: pointer;
-        }
-        
-        #myLinks {
-            display: none;
-            height: 186px;
-            width: 223px;
-            background-color: #33323D;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            flex-direction: column;
-            right: 0px;
-            top: 56px;
-        }
-        
-        #myLinks a,
-        #footerLinks a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 12px;
-            padding-bottom: 32px;
-            font-weight: regular;
-        }
-        /* ----------------------Navigation area end---------------------------------------------------------*/
-        /* ----------------------Footer area start---------------------------------------------------------*/
-        
-        footer {
-            background-color: #33323D;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 354px;
-            padding: 0;
-        }
-        
-        footer .triangle-up {
-            border-bottom-color: #FFF;
-        }
-        
-        footer .triangle-down {
-            border-top-color: #FFF;
-        }
-        
-        #footerLinks {
-            display: flex;
-            height: 186px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        footer img {
-            width: 24px;
-            padding: 0 8px;
-        }
-        /* ----------------------Footer area end---------------------------------------------------------*/
-        /* ----------------------Main area start---------------------------------------------------------*/
-        
-        .poster {
-            width: 100%;
-            padding-top: 87%;
-            height: 0;
-            background-image: url('../images/image-homepage-hero.jpg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-bottom: 24px;
-        }
-        
-        @media only screen and (min-width: 375px) {
-            .poster {
-                background-image: url('../images/image-homepage-hero2x.jpg');
-            }
-        }
-        
-        h1 {
-            font-family: 'Ibarra Real Nova', serif;
-            font-size: 40px;
-            letter-spacing: -0.36px;
-            line-height: 42px;
-            color: #33323D;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        .aboutme {
-            width: 200px;
-            height: 48px;
-            padding: 17px auto;
-            background-color: #203A4C;
-            letter-spacing: 2px;
-            color: #FFFFFF;
-            border: none;
-            text-transform: uppercase;
-            font-size: 12px;
-            margin-top: 32px;
-            display: flex;
-            flex-direction: row;
-            justify-content: left-end;
-            align-items: center;
-        }
-        
-        .aboutme img {
-            width: 16px;
-            height: 12px;
-            padding: 18px;
-        }
-        
-        .aboutme p {
-            flex-grow: 1;
-        }
-        
-        .infophoto {
-            margin-top: 96px;
-        }
-        
-        .photo {
-            width: 100%;
-            padding-top: 111%;
-            height: 0;
-            background-image: url('../images/image-homepage-profile.jpg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-bottom: 32px;
-        }
-        
-        @media only screen and (min-width: 375px) {
-            .photo {
-                background-image: url('../images/image-homepage-profile2x.jpg');
-            }
-        }
-        
-        .info p {
-            margin-top: 28px;
-            line-height: 30px;
-            color: #33323D;
-        }
-        
-        .info {
-            border-top: 1px solid rgb(51, 50, 61, 0.15);
-            border-bottom: 1px solid rgb(51, 50, 61, 0.15);
-            padding: 32px 0 51px 0;
-            margin-bottom: 80px;
-        }
-        
-        .goport {
-            width: 202px;
-            height: 48px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 12px;
-            background-color: white;
-            border: 1px solid #33323D;
-            margin-top: 24px;
-        }
-        
-        .interested {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding-bottom: 40px;
-        }
-        
-        .interested .goport {
-            margin-top: 40px;
-            width: 162px;
-        }
-        
-        hr.int {
-            display: none;
-        }
-        /* ----------------------Main area end---------------------------------------------------------*/
-        /* ----------------------Tablet home page start---------------------------------------------------------*/
-        
-        @media only screen and (min-width:768px) {
-            .infophoto {
-                display: flex;
-                flex-direction: row;
-                height: 600px;
-                width: 100%;
-                margin-bottom: 96px;
-            }
-            .photo {
-                width: 40%;
-                height: 600px;
-                padding: 0;
-                background-image: url('../images/image-homepage-profile-t.jpg');
-                background-size: cover;
-                margin-bottom: 0;
-                background-position: center;
-            }
-            .info {
-                width: 60%;
-                padding: 0;
-                margin-left: 69px;
-                margin-bottom: 80px;
-                height: 100%;
-                padding-top: 51px;
-                box-sizing: border-box;
-            }
-            .posterhey {
-                position: relative;
-            }
-            .hello {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 514px;
-                height: 278px;
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                padding-right: 56px;
-            }
-            .poster {
-                background-image: url('../images/image-homepage-hero-t.jpg');
-            }
-            .interested {
-                justify-content: center;
-                flex-direction: row;
-                text-align: unset;
-                align-items: baseline;
-            }
-            hr.int {
-                display: block;
-                border-top: 1px solid rgb(51, 50, 61, 0.15);
-                width: 25%;
-                margin: 5%;
-            }
-            .interested h1 {
-                width: 75%;
-            }
-            #burger {
-                display: none;
-            }
-            #myLinks {
-                display: flex !important;
-                width: 60%;
-                height: unset;
-                background-color: white;
-                position: static;
-                flex-direction: row;
-                justify-content: flex-end;
-            }
-            #myLinks a {
-                float: left;
-                display: block;
-                text-align: center;
-                padding: 14px 0px 14px 16px;
-                color: #33323D;
-            }
-        }
+                                                    * {
+                                                        margin: 0;
+                                                        padding: 0;
+                                                    }
+                                                    
+                                                    html,
+                                                    body {
+                                                        height: 100%;
+                                                        font-family: 'Public Sans', sans-serif;
+                                                        font-size: 16px;
+                                                        scroll-behavior: smooth;
+                                                        box-sizing: border-box;
+                                                    }
+                                                    
+                                                    body {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                    }
+                                                    
+                                                    main {
+                                                        flex: 1 0 auto;
+                                                        margin: 32px;
+                                                    }
+                                                    
+                                                    footer {
+                                                        flex-shrink: 0;
+                                                    }
+                                                    /* ----------------------Navigation area start---------------------------------------------------------*/
+                                                    
+                                                    nav {
+                                                        margin: 32px;
+                                                        margin-bottom: 15px;
+                                                        height: 30px;
+                                                        flex-shrink: 0;
+                                                        height: 32px;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: space-between;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    .triangles {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                    }
+                                                    
+                                                    .triangle-up {
+                                                        width: 0;
+                                                        height: 0;
+                                                        border-left: 15px solid transparent;
+                                                        border-right: 15px solid transparent;
+                                                        border-bottom: 26px solid #33323D;
+                                                        margin-bottom: 4px;
+                                                    }
+                                                    
+                                                    .triangle-down {
+                                                        width: 0;
+                                                        height: 0;
+                                                        border-left: 15px solid transparent;
+                                                        border-right: 15px solid transparent;
+                                                        border-top: 26px solid #33323D;
+                                                        margin-top: 4px;
+                                                    }
+                                                    
+                                                    #burger {
+                                                        background-image: url("../images/hamburger.svg");
+                                                        width: 24px;
+                                                        height: 13px;
+                                                        margin: auto 0;
+                                                    }
+                                                    
+                                                    #burger:hover {
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    #myLinks {
+                                                        display: none;
+                                                        height: 186px;
+                                                        width: 223px;
+                                                        background-color: #33323D;
+                                                        text-align: center;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        position: absolute;
+                                                        flex-direction: column;
+                                                        right: 0px;
+                                                        top: 56px;
+                                                    }
+                                                    
+                                                    #myLinks a,
+                                                    #footerLinks a {
+                                                        display: block;
+                                                        color: white;
+                                                        text-decoration: none;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 2px;
+                                                        font-size: 12px;
+                                                        padding-bottom: 32px;
+                                                        font-weight: regular;
+                                                    }
+                                                    
+                                                    #myLinks a.activel {
+                                                        color: #5FB4A2;
+                                                    }
+                                                    /* ----------------------Navigation area end---------------------------------------------------------*/
+                                                    /* ----------------------Footer area start---------------------------------------------------------*/
+                                                    
+                                                    footer {
+                                                        background-color: #33323D;
+                                                        display: flex;
+                                                        text-align: center;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        flex-direction: column;
+                                                        height: 354px;
+                                                        padding: 0;
+                                                    }
+                                                    
+                                                    footer .triangle-up {
+                                                        border-bottom-color: #FFF;
+                                                    }
+                                                    
+                                                    footer .triangle-down {
+                                                        border-top-color: #FFF;
+                                                    }
+                                                    
+                                                    #footerLinks {
+                                                        display: flex;
+                                                        height: 186px;
+                                                        text-align: center;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        flex-direction: column;
+                                                    }
+                                                    
+                                                    footer img {
+                                                        width: 24px;
+                                                        padding: 0 8px;
+                                                    }
+                                                    /* ----------------------Footer area end---------------------------------------------------------*/
+                                                    /* ----------------------Main area start---------------------------------------------------------*/
+                                                    
+                                                    .poster {
+                                                        width: 100%;
+                                                        padding-top: 87%;
+                                                        height: 0;
+                                                        background-image: url('../images/image-homepage-hero.jpg');
+                                                        background-repeat: no-repeat;
+                                                        background-size: contain;
+                                                        margin-bottom: 24px;
+                                                    }
+                                                    
+                                                    @media only screen and (min-width: 375px) {
+                                                        .poster {
+                                                            background-image: url('../images/image-homepage-hero2x.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    h1 {
+                                                        font-family: 'Ibarra Real Nova', serif;
+                                                        font-size: 40px;
+                                                        letter-spacing: -0.36px;
+                                                        line-height: 42px;
+                                                        color: #33323D;
+                                                    }
+                                                    
+                                                    a {
+                                                        text-decoration: none;
+                                                    }
+                                                    
+                                                    .aboutme {
+                                                        width: 200px;
+                                                        height: 48px;
+                                                        padding: 17px auto;
+                                                        background-color: #203A4C;
+                                                        letter-spacing: 2px;
+                                                        color: #FFFFFF;
+                                                        border: none;
+                                                        text-transform: uppercase;
+                                                        font-size: 12px;
+                                                        margin-top: 32px;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: left-end;
+                                                        align-items: center;
+                                                    }
+                                                    
+                                                    .aboutme img {
+                                                        width: 16px;
+                                                        height: 12px;
+                                                        padding: 18px;
+                                                    }
+                                                    
+                                                    .aboutme p {
+                                                        flex-grow: 1;
+                                                    }
+                                                    
+                                                    .infophoto {
+                                                        margin-top: 96px;
+                                                    }
+                                                    
+                                                    .photo {
+                                                        width: 100%;
+                                                        padding-top: 111%;
+                                                        height: 0;
+                                                        background-image: url('../images/image-homepage-profile.jpg');
+                                                        background-repeat: no-repeat;
+                                                        background-size: contain;
+                                                        margin-bottom: 32px;
+                                                    }
+                                                    
+                                                    @media only screen and (min-width: 375px) {
+                                                        .photo {
+                                                            background-image: url('../images/image-homepage-profile2x.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    .info p {
+                                                        margin-top: 28px;
+                                                        line-height: 30px;
+                                                        color: #33323D;
+                                                    }
+                                                    
+                                                    .info {
+                                                        border-top: 1px solid rgb(51, 50, 61, 0.15);
+                                                        border-bottom: 1px solid rgb(51, 50, 61, 0.15);
+                                                        padding: 32px 0 51px 0;
+                                                        margin-bottom: 80px;
+                                                    }
+                                                    
+                                                    .goport {
+                                                        width: 202px;
+                                                        height: 48px;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 2px;
+                                                        font-size: 12px;
+                                                        background-color: white;
+                                                        border: 1px solid #33323D;
+                                                        margin-top: 24px;
+                                                    }
+                                                    
+                                                    .interested {
+                                                        text-align: center;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        flex-direction: column;
+                                                        padding-bottom: 40px;
+                                                    }
+                                                    
+                                                    .interested .goport {
+                                                        margin-top: 40px;
+                                                        width: 162px;
+                                                    }
+                                                    
+                                                    hr.int {
+                                                        display: none;
+                                                    }
+                                                    /* ----------------------Main area end---------------------------------------------------------*/
+                                                    /* ----------------------Tablet home page start---------------------------------------------------------*/
+                                                    
+                                                    @media only screen and (min-width:768px) {
+                                                        .infophoto {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            height: 600px;
+                                                            width: 100%;
+                                                            margin-bottom: 96px;
+                                                        }
+                                                        .photo {
+                                                            width: 40%;
+                                                            height: 600px;
+                                                            padding: 0;
+                                                            background-image: url('../images/image-homepage-profile-t.jpg');
+                                                            background-size: cover;
+                                                            margin-bottom: 0;
+                                                            background-position: center;
+                                                        }
+                                                        .info {
+                                                            width: 60%;
+                                                            padding: 0;
+                                                            margin-left: 69px;
+                                                            margin-bottom: 80px;
+                                                            height: 100%;
+                                                            padding-top: 51px;
+                                                            box-sizing: border-box;
+                                                        }
+                                                        .posterhey {
+                                                            position: relative;
+                                                        }
+                                                        .hello {
+                                                            position: absolute;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            width: 514px;
+                                                            height: 278px;
+                                                            background-color: white;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: flex-end;
+                                                            padding-right: 56px;
+                                                        }
+                                                        .poster {
+                                                            background-image: url('../images/image-homepage-hero2x-t.jpg');
+                                                        }
+                                                        .interested {
+                                                            justify-content: center;
+                                                            flex-direction: row;
+                                                            text-align: unset;
+                                                            align-items: baseline;
+                                                        }
+                                                        hr.int {
+                                                            display: block;
+                                                            border-top: 1px solid rgb(51, 50, 61, 0.15);
+                                                            width: 25%;
+                                                            margin: 5%;
+                                                        }
+                                                        .interested h1 {
+                                                            width: 75%;
+                                                        }
+                                                        #burger {
+                                                            display: none;
+                                                        }
+                                                        #myLinks {
+                                                            display: flex !important;
+                                                            width: 60%;
+                                                            height: unset;
+                                                            background-color: white;
+                                                            position: static;
+                                                            flex-direction: row;
+                                                            justify-content: flex-end;
+                                                        }
+                                                        #myLinks a {
+                                                            float: left;
+                                                            display: block;
+                                                            text-align: center;
+                                                            padding: 14px 0px 14px 16px;
+                                                            color: #33323D;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (min-width:1440px) {
+                                                        main,
+                                                        nav {
+                                                            width: 1110px;
+                                                            margin-right: auto;
+                                                            margin-left: auto;
+                                                        }
+                                                        .poster {
+                                                            background-image: url('../images/image-homepage-hero2x-d.jpg');
+                                                            height: 600px;
+                                                            width: 1110px;
+                                                            background-color: aqua;
+                                                            padding-top: 0;
+                                                        }
+                                                        .photo {
+                                                            width: 540px;
+                                                            background-image: url('../images/image-homepage-profile2x.jpg');
+                                                        }
+                                                    }
+                                                    /* ----------------------Portfolio start---------------------------------------------------------*/
+                                                    
+                                                    .infophoto.portfolio {
+                                                        margin-top: 0;
+                                                    }
+                                                    
+                                                    .photo.manage {
+                                                        background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
+                                                        background-color: aqua;
+                                                        padding-top: 92%;
+                                                    }
+                                                    
+                                                    .photo.manage .bookmark {
+                                                        background-image: url('../images/portfolio/image-portfolio-bookmark2x.jpg');
+                                                    }
+                                                    
+                                                    @media only screen and (min-width:500px) {
+                                                        .photo.manage {
+                                                            width: 100%;
+                                                            height: 300px;
+                                                            padding-top: 0;
+                                                            background-size: cover;
+                                                            padding: 0 auto;
+                                                            background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (min-width:768px) {
+                                                        .infophoto.portfolio {
+                                                            margin-top: 0;
+                                                            padding: 0;
+                                                            height: unset;
+                                                            align-items: center;
+                                                        }
+                                                        .infophoto.portfolio.reverse {
+                                                            flex-direction: row-reverse;
+                                                            justify-content: flex-end;
+                                                        }
+                                                        .photo.manage {
+                                                            width: 50%;
+                                                            height: 314px;
+                                                            padding-top: 0;
+                                                            background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
+                                                        }
+                                                        .photo.manage.bookmark {
+                                                            background-image: url('../images/portfolio/image-portfolio-bookmark2x.jpg');
+                                                        }
+                                                        .info.portfolio {
+                                                            padding: 32px 0 50px 0;
+                                                            margin-bottom: 0px;
+                                                            width: 50%;
+                                                        }
+                                                        .info.reverse {
+                                                            margin-left: 0;
+                                                            margin-right: 69px;
+                                                        }
+                                                    }
