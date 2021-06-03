@@ -201,12 +201,17 @@
                                                     
                                                     .photo {
                                                         width: 100%;
-                                                        padding-top: 111%;
+                                                        padding-top: 66%;
                                                         height: 0;
-                                                        background-image: url('../images/image-homepage-profile.jpg');
+                                                        background-image: url('../images/image-homepage-profile2x.jpg');
                                                         background-repeat: no-repeat;
                                                         background-size: contain;
                                                         margin-bottom: 32px;
+                                                    }
+                                                    
+                                                    .contact2 {
+                                                        width: 100%;
+                                                        padding-top: 66%;
                                                     }
                                                     
                                                     @media only screen and (min-width: 375px) {
@@ -271,7 +276,7 @@
                                                             width: 40%;
                                                             height: 600px;
                                                             padding: 0;
-                                                            background-image: url('../images/image-homepage-profile-t.jpg');
+                                                            background-image: url('../images/image-homepage-profile2x.jpg');
                                                             background-size: cover;
                                                             margin-bottom: 0;
                                                             background-position: center;
@@ -414,4 +419,31 @@
                                                             margin-left: 0;
                                                             margin-right: 69px;
                                                         }
+                                                    }
+                                                    /* ----------------------Contact start---------------------------------------------------------*/
+                                                    
+                                                    .contact {
+                                                        margin-top: 0;
+                                                    }
+                                                    
+                                                    .contact a {
+                                                        color: gray;
+                                                    }
+                                                    
+                                                    .contact a:hover {
+                                                        color: lightgrey;
+                                                    }
+                                                    
+                                                    .contact {
+                                                        border-top: none;
+                                                        border-bottom: none;
+                                                        padding-top: 0;
+                                                    }
+                                                    
+                                                    .contact2 {
+                                                        background-image: url('../images/cat.jpg');
+                                                    }
+                                                    
+                                                    button {
+                                                        cursor: pointer;
                                                     }
