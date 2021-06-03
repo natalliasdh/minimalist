@@ -355,7 +355,6 @@
                                                             background-image: url('../images/image-homepage-hero2x-d.jpg');
                                                             height: 600px;
                                                             width: 1110px;
-                                                            background-color: aqua;
                                                             padding-top: 0;
                                                         }
                                                         .photo {
@@ -371,7 +370,6 @@
                                                     
                                                     .photo.manage {
                                                         background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
-                                                        background-color: aqua;
                                                         padding-top: 92%;
                                                     }
                                                     
