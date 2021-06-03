@@ -369,12 +369,12 @@
                                                     }
                                                     
                                                     .photo.manage {
-                                                        background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
-                                                        padding-top: 92%;
+                                                        background-image: url('../images/portfolio/stats.jpg');
+                                                        padding-top: 66%;
                                                     }
                                                     
-                                                    .photo.manage .bookmark {
-                                                        background-image: url('../images/portfolio/image-portfolio-bookmark2x.jpg');
+                                                    .photo.manage.bookmark {
+                                                        background-image: url('../images/portfolio/stats.jpg');
                                                     }
                                                     
                                                     @media only screen and (min-width:500px) {
@@ -405,9 +405,9 @@
                                                             padding-top: 0;
                                                             background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
                                                         }
-                                                        .photo.manage.bookmark {
+                                                        /*  .photo.manage.bookmark {
                                                             background-image: url('../images/portfolio/image-portfolio-bookmark2x.jpg');
-                                                        }
+                                                        }*/
                                                         .info.portfolio {
                                                             padding: 32px 0 50px 0;
                                                             margin-bottom: 0px;
