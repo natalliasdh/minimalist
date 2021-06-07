@@ -369,7 +369,7 @@
                                                     }
                                                     
                                                     .photo.manage {
-                                                        background-image: url('../images/portfolio/stats.jpg');
+                                                        background-image: url('../images/portfolio/meet.jpg');
                                                         padding-top: 66%;
                                                     }
                                                     
@@ -384,7 +384,7 @@
                                                             padding-top: 0;
                                                             background-size: cover;
                                                             padding: 0 auto;
-                                                            background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
+                                                            background-image: url('../images/portfolio/meet.jpg');
                                                         }
                                                     }
                                                     
@@ -403,7 +403,7 @@
                                                             width: 50%;
                                                             height: 314px;
                                                             padding-top: 0;
-                                                            background-image: url('../images/portfolio/image-portfolio-manage2x.jpg');
+                                                            background-image: url('../images/portfolio/meet.jpg');
                                                         }
                                                         /*  .photo.manage.bookmark {
                                                             background-image: url('../images/portfolio/image-portfolio-bookmark2x.jpg');
