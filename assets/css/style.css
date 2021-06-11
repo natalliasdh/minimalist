@@ -381,6 +381,10 @@
                                                         background-image: url('../images/portfolio/column-preview.jpg');
                                                     }
                                                     
+                                                    .photo.manage.podrequest {
+                                                        background-image: url('../images/portfolio/podrequest.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
