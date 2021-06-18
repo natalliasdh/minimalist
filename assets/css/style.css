@@ -393,6 +393,10 @@
                                                         background-image: url('../images/portfolio/intro.jpg');
                                                     }
                                                     
+                                                    .photo.manage.ping-coming-soon {
+                                                        background-image: url('../images/portfolio/ping-coming-soon.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
