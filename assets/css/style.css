@@ -401,6 +401,10 @@
                                                         background-image: url('../images/portfolio/sunnyside.jpg');
                                                     }
                                                     
+                                                    .photo.manage.typemaster {
+                                                        background-image: url('../images/portfolio/typemaster.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
