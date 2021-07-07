@@ -405,6 +405,10 @@
                                                         background-image: url('../images/portfolio/typemaster.jpg');
                                                     }
                                                     
+                                                    .photo.manage.blogr {
+                                                        background-image: url('../images/portfolio/blogr.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
