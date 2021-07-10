@@ -409,6 +409,10 @@
                                                         background-image: url('../images/portfolio/blogr.jpg');
                                                     }
                                                     
+                                                    .photo.manage.splitter {
+                                                        background-image: url('../images/portfolio/splitter.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
