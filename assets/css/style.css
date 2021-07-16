@@ -413,6 +413,10 @@
                                                         background-image: url('../images/portfolio/splitter.jpg');
                                                     }
                                                     
+                                                    .photo.manage.crowdfunding {
+                                                        background-image: url('../images/portfolio/crowdfunding.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
