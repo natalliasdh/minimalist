@@ -422,6 +422,10 @@
                                                         background-image: url('../images/portfolio/pricing.jpg');
                                                     }
                                                     
+                                                    .photo.manage.galleria {
+                                                        background-image: url('../images/portfolio/galleria.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
