@@ -426,6 +426,10 @@
                                                         background-image: url('../images/portfolio/galleria.jpg');
                                                     }
                                                     
+                                                    .photo.manage.gituser {
+                                                        background-image: url('../images/portfolio/gituser.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
