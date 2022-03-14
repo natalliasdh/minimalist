@@ -430,6 +430,10 @@
                                                         background-image: url('../images/portfolio/gituser.jpg');
                                                     }
                                                     
+                                                    .photo.manage.equalizer {
+                                                        background-image: url('../images/portfolio/equalizer.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
