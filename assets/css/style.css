@@ -438,6 +438,10 @@
                                                         background-image: url('../images/portfolio/design.jpg');
                                                     }
                                                     
+                                                    .photo.manage.art-gallery {
+                                                        background-image: url('../images/portfolio/art-gallery.jpg');
+                                                    }
+                                                    
                                                     @media only screen and (min-width:500px) {
                                                         .photo.manage {
                                                             width: 100%;
